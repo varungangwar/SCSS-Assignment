@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 0 $container-padding;
+
+  &-text {
+    max-width: 500px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-color;
+      margin-bottom: 2rem;
+    }
+  }
+}

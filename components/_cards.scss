@@ -1,0 +1,139 @@
+// Services Section
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+// Base Card Behavior (shared hover effect)
+%card-hover {
+  transition: $transition-fast ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+// Service Card
+.service-card {
+  background: white;
+  padding: 3rem 2rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  @extend %card-hover;
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  span {
+    display: block;
+    color: $primary-color;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.6;
+  }
+}
+
+// Stat Card
+.stat-card {
+  background: white;
+  padding: 3rem 2rem;
+  width: 220px;
+  text-align: center;
+  border-radius: $border-radius;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  @extend %card-hover;
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: $heading-color;
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+}
+
+// Stat Icon
+.stat-icon {
+  font-size: 2rem;
+  color: $secondary-color;
+  margin-bottom: 1rem;
+}
+
+// Team Card
+.team-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: $transition-fast ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Pricing Card
+.price-card {
+  background: white;
+  border-radius: $border-radius;
+  text-align: center;
+  padding-bottom: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  @extend %card-hover;
+
+  h3 {
+    font-size: 3rem;
+    margin: 2rem 0;
+
+    span {
+      font-size: 1.5rem;
+      vertical-align: top;
+    }
+
+    small {
+      font-size: 1rem;
+      color: $text-color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.5rem;
+
+    li {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+  }
+}
+
+// Blog Card
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,  0, 0, 0.1);
+  @extend %card-hover;
+}

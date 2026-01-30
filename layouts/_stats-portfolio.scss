@@ -1,0 +1,64 @@
+// STATS
+.stats {
+  position: relative;
+  padding: 6rem $container-padding;
+  background-image: url("../img/hero-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 30, 60, 0.85);
+    z-index: 0;
+  }
+
+  &-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+// PORTFOLIO
+.portfolio {
+  background: #061c3f;
+  padding: 8rem $container-padding;
+  color: white;
+
+  &-filters {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &-item {
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      display: block;
+      transition: 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+}

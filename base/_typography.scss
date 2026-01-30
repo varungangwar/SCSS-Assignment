@@ -1,0 +1,17 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.skills-text {
+  flex: 1;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.8;
+  }
+}

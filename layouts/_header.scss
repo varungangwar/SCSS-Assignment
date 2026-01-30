@@ -1,0 +1,116 @@
+// Main Header Section
+.header {
+  min-height: 100vh;
+  background-image: url("../img/home-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100%;
+}
+
+// Navbar Container
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+// Logo
+.logo {
+  height: 50px;
+}
+
+// Navigation Menu
+.navbar {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    position: relative;
+
+    // Hover underline animation
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: $primary-color;
+      left: 0;
+      bottom: -5px;
+      transition: $transition-fast;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+// Shared Section Header Style (DRY System)
+%section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.7;
+  }
+}
+
+// Services Header
+.services-header {
+  @extend %section-header;
+}
+
+// Portfolio Header (slightly wider + different text color)
+.portfolio-header {
+  @extend %section-header;
+  max-width: 800px;
+
+  p {
+    color: #cbd5f5;
+  }
+}
+
+// Team Header
+.team-header {
+  @extend %section-header;
+}
+
+// Pricing Header (more spacing)
+.pricing-header {
+  @extend %section-header;
+  margin-bottom: 5rem;
+}
+
+// Process Header
+.process-header {
+  @extend %section-header;
+  margin-bottom: 5rem;
+}
+
+// Blog Header (z-index layer)
+.blog-header {
+  @extend %section-header;
+  position: relative;
+  z-index: 1;
+}
+
+// Contact Header
+.contact-header {
+  @extend %section-header;
+}

@@ -1,12 +1,11 @@
 // Main Header Section
 .header {
   min-height: 100vh;
-  background-image: url("../img/home-bg.png");
+  background-image: url("./img/home-bg.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100%;
 }
-
 // Navbar Container
 .nav-container {
   display: flex;
@@ -14,12 +13,10 @@
   align-items: center;
   padding: 1.5rem 3rem;
 }
-
 // Logo
 .logo {
   height: 50px;
 }
-
 // Navigation Menu
 .navbar {
   ul {
@@ -35,7 +32,6 @@
     color: $text-color;
     font-weight: 500;
     position: relative;
-
     // Hover underline animation
     &::after {
       content: "";
@@ -53,7 +49,6 @@
     }
   }
 }
-
 // Shared Section Header Style (DRY System)
 %section-header {
   text-align: center;
@@ -70,12 +65,10 @@
     line-height: 1.7;
   }
 }
-
 // Services Header
 .services-header {
   @extend %section-header;
 }
-
 // Portfolio Header (slightly wider + different text color)
 .portfolio-header {
   @extend %section-header;
@@ -85,31 +78,26 @@
     color: #cbd5f5;
   }
 }
-
 // Team Header
 .team-header {
   @extend %section-header;
 }
-
 // Pricing Header (more spacing)
 .pricing-header {
   @extend %section-header;
   margin-bottom: 5rem;
 }
-
 // Process Header
 .process-header {
   @extend %section-header;
   margin-bottom: 5rem;
 }
-
 // Blog Header (z-index layer)
 .blog-header {
   @extend %section-header;
   position: relative;
   z-index: 1;
 }
-
 // Contact Header
 .contact-header {
   @extend %section-header;

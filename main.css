@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;  
+  padding: 0 20px;  
+  box-sizing: border-box; 
+}
 body {
   background: #f8f9fc;
   color: #333;
@@ -828,6 +834,7 @@ button {
   inset: 0;
   background: rgba(255, 255, 255, 0.9);
   z-index: 0;
+  
 }
 .blog-grid {
   position: relative;

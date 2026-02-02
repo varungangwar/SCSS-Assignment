@@ -4,7 +4,6 @@
   justify-content: center;
   gap: 2rem;
 }
-
 // Base Card Behavior (shared hover effect)
 %card-hover {
   transition: $transition-fast ease;
@@ -13,7 +12,6 @@
     transform: translateY(-10px);
   }
 }
-
 // Service Card
 .service-card {
   background: white;
@@ -39,7 +37,6 @@
     line-height: 1.6;
   }
 }
-
 // Stat Card
 .stat-card {
   background: white;
@@ -63,14 +60,12 @@
     color: $text-color;
   }
 }
-
 // Stat Icon
 .stat-icon {
   font-size: 2rem;
   color: $secondary-color;
   margin-bottom: 1rem;
 }
-
 // Team Card
 .team-card {
   overflow: hidden;
@@ -92,7 +87,6 @@
     }
   }
 }
-
 // Pricing Card
 .price-card {
   background: white;
@@ -128,7 +122,6 @@
     }
   }
 }
-
 // Blog Card
 .blog-card {
   background: white;

@@ -36,12 +36,11 @@
     }
   }
 }
-
 // SERVICES SECTION
 .services {
   position: relative;
   padding: 8rem $container-padding;
-  background-image: url("../img/about-bg.png");
+  background-image: url("./img/about-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +64,6 @@
     margin: auto;
   }
 }
-
 // ICON BOX
 .icon-box {
   width: 80px;

@@ -2,7 +2,7 @@
 .stats {
   position: relative;
   padding: 6rem $container-padding;
-  background-image: url("../img/hero-01.jpg");
+  background-image: url("./img/hero-01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,6 @@
     margin: auto;
   }
 }
-
 // PORTFOLIO
 .portfolio {
   background: #061c3f;
@@ -38,7 +37,6 @@
     justify-content: center;
     gap: 1rem;
   }
-
   &-grid {
     max-width: 1200px;
     margin: auto;
@@ -46,7 +44,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-
   &-item {
     overflow: hidden;
     border-radius: 10px;

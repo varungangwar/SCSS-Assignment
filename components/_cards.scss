@@ -130,3 +130,34 @@
   box-shadow: 0 15px 40px rgba(0,  0, 0, 0.1);
   @extend %card-hover;
 }
+
+.feature-item {
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.portfolio-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.team-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.team-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

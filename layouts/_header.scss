@@ -11,11 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-}
-// Logo
-.logo {
-  height: 50px;
+  padding-right: 2rem;
+  border-bottom: 1px solid white;
 }
 // Navigation Menu
 .navbar {
@@ -23,14 +20,13 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
   }
 
   a {
     text-decoration: none;
     color: $text-color;
-    font-weight: 500;
+    font-weight: 550;
     position: relative;
     // Hover underline animation
     &::after {

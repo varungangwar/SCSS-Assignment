@@ -67,7 +67,12 @@
 }
 
 .footer-social a:hover {
-  background: #f7c600; /* or your brand color */
+  background: #dcdad2; /* or your brand color */
   color: #000;
   transform: translateY(-3px);
+}
+.footer-copy{
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

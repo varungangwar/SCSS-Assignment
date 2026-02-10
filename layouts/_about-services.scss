@@ -1,17 +1,21 @@
 // ABOUT SECTION
 .about {
-  padding: 6rem $container-padding;
+  height: 90%;
+  width: 90%;
+  margin: 8%;
+  padding-right: 6%;
 
   &-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
   }
 
   &-image img {
-    width: 450px;
+    width: 100%;
     max-width: 100%;
+    height: 100%;
   }
 
   &-content {
@@ -38,44 +42,88 @@
 }
 // SERVICES SECTION
 .services {
-  position: relative;
-  padding: 8rem $container-padding;
-  background-image: url("./img/about-bg.png");
+  padding: 70px 20px;
+  background-image: url("./img/about-bg.png"); /* your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  &-bg {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1000px;
-    height: 500px;
-    background: #eee;
-    border-radius: 50%;
-    z-index: 0;
-  }
-
-  &-container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: auto;
-  }
+  position: relative;
 }
-// ICON BOX
-.icon-box {
-  width: 80px;
-  height: 80px;
-  background: $primary-color;
-  margin: 0 auto 1.5rem;
-  border-radius: 0 0 40px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.services-header {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+}
 
-  img {
-    width: 40px;
-  }
+.services-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.services-header p {
+  color: rgb(0, 0, 0);
+}
+/* ===== Cards Layout ===== */
+.services-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+/* ===== Card ===== */
+.service-card {
+  background: #f3f3f3;
+  padding: 45px 30px;
+  text-align: center;
+  border-radius: 16px;
+  width: 280px;
+  transition: 0.3s;
+}
+/* ===== Icon Box ===== */
+.icon-box {
+  position: relative;
+  width: 90px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+/* Shield Shape */
+.shield {
+  width: 100%;
+  height: 100%;
+  fill: #0d3b73;        /* Dark blue */
+  stroke: #f2c200;      /* Yellow border */
+  stroke-width: 2;
+  transition: 0.3s;
+}
+/* Icon */
+.icon {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #f2c200;       /* Yellow */
+  transition: 0.3s;
+}
+/* Hover */
+.service-card:hover .icon {
+  color: #ffffff;       /* Yellow → White */
+}
+
+.service-card:hover .shield {
+  stroke: #ffffff;      /* Border white (optional) */
+}
+/* Text */
+.service-card h3 {
+  margin: 10px 0 5px;
+}
+
+.service-card span {
+  color: #0d3bff;
+  font-size: 14px;
+}
+
+.service-card p {
+  color: #444;
+  font-size: 14px;
 }

@@ -1,11 +1,11 @@
-$tablet: 1024px;
+$tablet: 900px;
 $mobile: 768px;
 /* ---------- GLOBAL SAFETY ---------- */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+//   display: block;
+// }
 body {
   overflow-x: hidden;
 }
@@ -318,4 +318,122 @@ body {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
+}
+@media (max-width: $tablet) {
+  .hamburger {
+    margin-left: auto;
+    order: 2;
+  }
+
+  .logo {
+    order: 1;
+  }
+}
+@media (max-width: $tablet) {
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;          // keep in one line
+    justify-content: space-between; // logo left, hamburger right
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+  }
+
+  .logo {
+    margin: 0;        // remove any auto/center margin
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;  // push to right
+  }
+
+}
+/* ================= NAVBAR BASE ================= */
+
+.nav-container {
+  position: relative;
+  z-index: 999;
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  width: 26px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: $text-color;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ================= MOBILE NAV ================= */
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop nav */
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.96);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+  }
+
+  /* Mobile nav list */
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 2rem 0;
+  }
+
+  /* When menu open */
+  .navbar.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* ================= HAMBURGER ANIMATION ================= */
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }

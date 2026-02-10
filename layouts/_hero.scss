@@ -3,16 +3,30 @@
   align-items: center;
   justify-content: space-between;
   min-height: 80vh;
-  padding: 0 $container-padding;
+
+  /* Lock layout width like professional sites */
+  max-width: 1200px;     // 👈 prevents stretching on large screens
+  margin: 0 auto;        // 👈 centers hero
+
+  padding: 0 40px;       // 👈 fixed inner spacing (no vw)
+
   &-text {
-    max-width: 500px;
+    max-width: 520px;
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
+
     p {
       color: $text-color;
       margin-bottom: 2rem;
     }
   }
+}
+
+/* Image */
+.home4 img {
+  max-width: 420px;
+  width: 100%;
 }

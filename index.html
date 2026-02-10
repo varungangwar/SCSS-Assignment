@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="wrapper">
-     <header class="header">
+    <header class="header">
   <div class="nav-container">
     <img src="./img/logo.png" class="logo" alt="Logo">
     <button class="hamburger" aria-label="Toggle Menu">
@@ -17,7 +17,6 @@
       <span></span>
       <span></span>
    </button>
-
     <nav class="navbar">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -27,19 +26,22 @@
         <li><a href="#team">Team</a></li>
         <li><a href="#price">Price</a></li>
         <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
   <!-- HERO CONTENT -->
   <div class="hero" id="hero">
     <div class="hero-text">
-      <h1>Multimax Creative Agency</h1>
+      <h1>Multimax</h1>
+      <h1>Creative Agency</h1>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit, assumenda placeat temporibus magni,
       We build modern, creative, and powerful digital experiences for brands.</p>
-      <a href="#" class="hero-btn">Get Started</a>    
+      <a href="#" class="hero-btn">Get Started →</a>    
     </div>
-     <img src="./img/home-04.png" height="320px" alt="home4">
+    <div class="home4">
+       <img src="./img/home-04.png" height="320px" alt="home4">
+    </div>
   </div>
 </header>
     <!-- About Section -->
@@ -63,46 +65,57 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem suscipit ex quasi
         in iure dolorem cupiditate corrupti ducimus ipsa.
       </p>
-      <a href="#" class="about-btn"><button>Read More</button></a>
+       <a href="#" class="about-btn">Read More</a>
     </div>
   </div>
 </section>
     <!-- Our Creative Section -->
-<section class="services" id="services" >
-  <div class="services-container">
-    <div class="services-header">
-      <h2>Our Creative</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown
-        printer took a galley of type and scrambled it to make a type specimen book it has survived
-        not only five centuries.
-      </p>
+<section class="services" id="services">
+
+  <div class="services-header">
+    <h2>Our Creative</h2>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown
+      printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+  </div>
+
+  <div class="services-cards">
+    <!-- Card 1 -->
+    <div class="service-card">
+      <div class="icon-box">
+        <svg class="shield" viewBox="0 0 100 120">
+          <path d="M50 0 L100 20 V65 C100 90 75 110 50 120 C25 110 0 90 0 65 V20 Z"/>
+        </svg>
+        <i class="fa fa-paint-brush icon"></i>
+      </div>
+      <h3>Web Design</h3>
+      <span>Modern & Clean Design</span>
+      <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
     </div>
-    <div class="services-cards">
-      <div class="service-card">
-        <div class="icon-box">
-         <i class="fa fa-paint-brush" style="font-size:36px; color: yellow;"></i>
-        </div>
-        <h3>Web Design</h3>
-        <span>Modern & Clean Design</span>
-        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+    <!-- Card 2 -->
+    <div class="service-card">
+      <div class="icon-box">
+        <svg class="shield" viewBox="0 0 100 120">
+          <path d="M50 0 L100 20 V65 C100 90 75 110 50 120 C25 110 0 90 0 65 V20 Z"/>
+        </svg>
+        <i class="fa fa-tv icon"></i>
       </div>
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fa fa-tv" style="font-size:36px; color: yellow;"></i>
-        </div>
-        <h3>Development</h3>
-        <span>Web & Mobile Development</span>
-        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+      <h3>Development</h3>
+      <span>Web & Mobile Development</span>
+      <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+    </div>
+    <!-- Card 3 -->
+    <div class="service-card">
+      <div class="icon-box">
+        <svg class="shield" viewBox="0 0 100 120">
+          <path d="M50 0 L100 20 V65 C100 90 75 110 50 120 C25 110 0 90 0 65 V20 Z"/>
+        </svg>
+        <i class="fa fa-asterisk icon"></i>
       </div>
-      <div class="service-card">
-        <div class="icon-box">
-          <i class="fa fa-asterisk" style="font-size:36px; color: yellow;"></i>
-        </div>
-        <h3>Branding</h3>
-        <span>Logo Design</span>
-        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-      </div>
+      <h3>Branding</h3>
+      <span>Logo Design</span>
+      <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
     </div>
   </div>
 </section>
@@ -120,145 +133,172 @@
     </div>
     <div class="skills-bg">
       <div class="skills-bars">
-      <div class="skill">
-        <div class="skill-label">
-          <span>HTML // CSS3</span>
-          <span>95%</span>
-        </div>
-        <div class="bar">
-          <div class="bar-fill" style="width: 95%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-label">
-          <span>Jquery // JavaScript</span>
-          <span>80%</span>
-        </div>
-        <div class="bar">
-          <div class="bar-fill" style="width: 80%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-label">
-          <span>Wordpress</span>
-          <span>75%</span>
-        </div>
-        <div class="bar">
-          <div class="bar-fill" style="width: 75%"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-label">
-          <span>Bootstrap</span>
-          <span>92%</span>
-        </div>
-        <div class="bar">
-          <div class="bar-fill" style="width: 92%"></div>
-        </div>
-      </div>
+
+  <div class="skill" data-percent="95">
+    <div class="skill-label">
+      <span>HTML // CSS3</span>
+      <span>95%</span>
     </div>
+    <div class="bar">
+      <div class="bar-fill"></div>
+    </div>
+  </div>
+
+  <div class="skill" data-percent="80">
+    <div class="skill-label">
+      <span>Jquery // JavaScript</span>
+      <span>80%</span>
+    </div>
+    <div class="bar">
+      <div class="bar-fill"></div>
+    </div>
+  </div>
+
+  <div class="skill" data-percent="75">
+    <div class="skill-label">
+      <span>Wordpress</span>
+      <span>75%</span>
+    </div>
+    <div class="bar">
+      <div class="bar-fill"></div>
+    </div>
+  </div>
+
+  <div class="skill" data-percent="92">
+    <div class="skill-label">
+      <span>Bootstrap</span>
+      <span>92%</span>
+    </div>
+    <div class="bar">
+      <div class="bar-fill"></div>
+    </div>
+  </div>
+
+</div>
+
     </div>   
   </div>
 </section>
     <!-- Services Section -->
-    <section class="features" id="features">
+  <section class="features" id="features">
   <div class="features-container">
     <h2 class="features-title">Our Services</h2>
+
     <div class="features-grid">
+
       <!-- Item 1 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-edit" style="font-size:36px"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-edit"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Designs & interfaces</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.
           Aenean massa. Cum sociis natoque penatibus et magnis.
         </p>
       </div>
+
       <!-- Item 2 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-cog" style="font-size:36px;"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-cog"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Highly customizable</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Eaque, sequi cupiditate!
           Nobis corporis exercitationem obcaecati magni rerum explicabo vel nemo.
         </p>
       </div>
+
       <!-- Item 3 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-desktop" style="font-size:36px"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Responsive design</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Laboriosam laudantium
           veritatis porro obcaecati, reiciendis.
         </p>
       </div>
+
       <!-- Item 4 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-code-fork" style="font-size:36px"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-code-fork"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Features & plugins</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Sequi voluptatem atque,
           hic ut necessitatibus nesciunt ullam officia.
         </p>
       </div>
+
       <!-- Item 5 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-gear" style="font-size:36px;"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-gear"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Optimised for speed</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit inventore fugiat
           rerum enim, quibusdam mollitia laborum magnam nobis sed.
         </p>
       </div>
-      <!-- Item 6 -->
+
+      <!-- Item 6 (LAST → no line needed visually) -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa fa-comment-o" style="font-size:36px"></i>
+        <div class="feature-top">
+          <div class="feature-icon">
+            <i class="fa fa-comment-o"></i>
+          </div>
+          <div class="feature-line"></div>
         </div>
-        <div class="feature-line"></div>
         <h3>Dedicated support</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Porro exercitationem
           vel dolores harum inventore vitae nam dolor.
         </p>
       </div>
+
     </div>
   </div>
 </section>
+
 <section class="stats">
   <div class="stats-container">
     <div class="stat-card">
-      <div class="stat-icon">{"</>"}</div>
+      <div class="stat-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
       <h3 class="stat-number" data-target="300">0</h3>
       <p>Our Customers</p>
     </div>
     <div class="stat-card">
-      <div class="stat-icon">☕</div>
+      <div class="stat-icon"><i class="fa fa-coffee" aria-hidden="true"></i></div>
       <h3 class="stat-number" data-target="150">0</h3>
       <p>Happy Clients</p>
     </div>
     <div class="stat-card">
-      <div class="stat-icon">💡</div>
+      <div class="stat-icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
       <h3 class="stat-number" data-target="115">0</h3>
       <p>Project Completed</p>
     </div>
     <div class="stat-card">
-      <div class="stat-icon">🏆</div>
+      <div class="stat-icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
       <h3 class="stat-number" data-target="20">0</h3>
       <p>Awards</p>
     </div>
@@ -274,7 +314,7 @@
       took a galley of type and scrambled it to make a type specimen book it has survived not only five centuries.
     </p>
     <div class="portfolio-filters">
-      <button class="active">All</button>
+      <button>All</button>
       <button>Brand</button>
       <button>Design</button>
       <button>Graphic</button>
@@ -311,19 +351,73 @@
     </p>
   </div>
   <div class="team-grid">
-    <div class="team-card">
-      <img src="./img/team/team-01.jpg" alt="Team Member 1">
-    </div>
-    <div class="team-card">
-      <img src="./img/team/team-02.jpg" alt="Team Member 2">
-    </div>
-    <div class="team-card">
-      <img src="./img/team/team-03.jpg" alt="Team Member 3">
-    </div>
-    <div class="team-card">
-      <img src="./img/team/team-04.jpg" alt="Team Member 4">
+
+  <!-- Card 1 -->
+  <div class="team-card">
+    <img src="./img/team/team-01.jpg" alt="Team Member 1">
+
+    <div class="team-overlay">
+      <h4>John Carter</h4>
+      <span>Web Developer</span>
+
+      <div class="team-social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
     </div>
   </div>
+
+  <!-- Card 2 -->
+  <div class="team-card">
+    <img src="./img/team/team-02.jpg" alt="Team Member 2">
+
+    <div class="team-overlay">
+      <h4>Emma Watson</h4>
+      <span>UI Designer</span>
+
+      <div class="team-social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="team-card">
+    <img src="./img/team/team-03.jpg" alt="Team Member 3">
+
+    <div class="team-overlay">
+      <h4>Michael Lee</h4>
+      <span>Frontend Engineer</span>
+
+      <div class="team-social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="team-card">
+    <img src="./img/team/team-04.jpg" alt="Team Member 4">
+
+    <div class="team-overlay">
+      <h4>Sophia Brown</h4>
+      <span>Web Designer</span>
+
+      <div class="team-social">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 </section>
 <section class="cta" id="contact">
   <div class="cta-container">
@@ -408,28 +502,28 @@
   <div class="process-steps">
     <div class="process-step">
       <div class="process-icon">
-        💡
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
       </div>
       <h3>Creative Ideas</h3>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
     </div>
     <div class="process-step">
       <div class="process-icon">
-        ✏️
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
       </div>
       <h3>Planning & Organization</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="process-step">
       <div class="process-icon">
-        💾
+        <i class="fa fa-database" aria-hidden="true"></i>
       </div>
       <h3>Development</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="process-step">
       <div class="process-icon">
-        🧪
+        <i class="fa fa-balance-scale" aria-hidden="true"></i>
       </div>
       <h3>Testing</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -476,9 +570,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minima placeat aut obcaecati iusto qui.</p>
         <a href="#">Read More →</a>
         <div class="blog-meta">
-          <span>Web Design</span>
-          <span>8 mins read</span>
-          <span>5 comments</span>
+          <span><i class="fa fa-user" aria-hidden="true"></i> Web Design</span>
+          <span><i class="fa fa-book" aria-hidden="true"></i> 8 mins read</span>
+          <span><i class="fa fa-comment" aria-hidden="true"> 5</i></span>
         </div>
       </div>
     </div>
@@ -493,9 +587,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime in consectetur.</p>
         <a href="#">Read More →</a>
         <div class="blog-meta">
-          <span>User Experience</span>
-          <span>5 mins read</span>
-          <span>7 comments</span>
+          <span><i class="fa fa-user" aria-hidden="true"></i> User Experience</span>
+          <span><i class="fa fa-book" aria-hidden="true"></i> 5 mins read</span>
+          <span><i class="fa fa-comment" aria-hidden="true"> 7</i></span>
         </div>
       </div>
     </div>
@@ -510,9 +604,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae itaque enim architecto.</p>
         <a href="#">Read More →</a>
         <div class="blog-meta">
-          <span>Business & Tech</span>
-          <span>9 mins read</span>
-          <span>5 comments</span>
+          <span><i class="fa fa-user" aria-hidden="true"></i> Business & Tech</span>
+          <span><i class="fa fa-book" aria-hidden="true"></i> 9 mins read</span>
+          <span><i class="fa fa-comment" aria-hidden="true"></i> 5</span>
         </div>
       </div>
     </div>
@@ -594,21 +688,21 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Forum</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Blog</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Our Story</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Forum</a></li>
       </ul>
     </div>
     <!-- SUPPORT -->
     <div class="footer-col">
       <h4>Support</h4>
       <ul>
-        <li><a href="#">FAQ's</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Policy</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Documentation</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> FAQ's</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Privacy</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Policy</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Support</a></li>
+        <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Documentation</a></li>
       </ul>
     </div>
     <!-- NEWSLETTER -->
@@ -625,11 +719,16 @@
       <div class="newsletter">
         <input type="email" placeholder="Enter your email">
         <button>➤</button>
+    
       </div>
+      <br>
+      <br>
     </div>
   </div>
   <hr>
   <!-- SOCIAL -->
+   <br>
+   <br>
   <div class="footer-social">
   <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
   <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
@@ -637,12 +736,15 @@
   <a href="#" aria-label="Pinterest"><i class="fa fa-pinterest"></i></a>
   <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
 </div>
-
+<br>
   <p class="footer-copy">
     © Your Company Name 2019 | All Rights Reserved. Designed by GEC Designs
   </p>
+  <br><br>
 </footer> 
   </div>
+  </div>
+     
   <script src="script.js"></script>
 
 </body>

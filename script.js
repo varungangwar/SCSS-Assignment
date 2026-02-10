@@ -72,3 +72,24 @@ const animateStats = () => {
 
 window.addEventListener("scroll", animateStats);
 animateStats();
+
+const skillsSection = document.querySelector(".skills-bars");
+const bars = document.querySelectorAll(".bar-fill");
+
+let started = false;
+
+function animateBars() {
+  const sectionTop = skillsSection.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (sectionTop < screenHeight - 100 && !started) {
+    bars.forEach(bar => {
+      const percent = bar.closest(".skill").getAttribute("data-percent");
+      bar.style.width = percent + "%";
+    });
+    started = true;
+  }
+}
+
+window.addEventListener("scroll", animateBars);
+
